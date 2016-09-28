@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#abeed9"
+    tools:context="com.arbordenizen.flipmaster.MainGame">
+
+    <Button
+        android:id="@+id/flipCard"
+
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/card_front"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:visibility="invisible"
+
+        android:onClick="flipCard" />
+
+    <Button
+        android:id="@+id/flipCardBack"
+
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/card_back"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:visibility="invisible"
+
+        android:onClick="newCard" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SCORE : 0"
+        android:id="@+id/scoreCounter"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/resetBtn"
+        android:layout_centerVertical="true"
+        android:enabled="false"
+        android:visibility="invisible"
+        android:padding="30dp"
+        android:layout_alignRight="@+id/gameInfoTxt"
+        android:layout_alignEnd="@+id/gameInfoTxt"
+        android:layout_alignLeft="@+id/gameInfoTxt"
+        android:layout_alignStart="@+id/gameInfoTxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No more cards!"
+        android:id="@+id/gameInfoTxt"
+        android:layout_above="@+id/resetBtn"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

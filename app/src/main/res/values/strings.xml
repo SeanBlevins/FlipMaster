@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Flip Master</string>
+    <string name="action_settings">Settings</string>
+    <string name="load_btn">Select Cards</string>
+    <string name="play_btn">Play</string>
+    <string name="prefs_file">MyPrefsFile</string>
+</resources>
